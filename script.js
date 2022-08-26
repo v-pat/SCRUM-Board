@@ -3,29 +3,6 @@ function allowDrop(ev) {
     ev.preventDefault();
 }
 
-var taskData = [
-    {
-        id: "ty565",
-        name: "task 1",
-        assignee: "vaibhav",
-        status: "toDo"
-    },
-    {
-        id: "gh79",
-
-        name: "task 2",
-        assignee: "vaibhav",
-        status: "inProgress"
-    },
-    {
-        id: "jhh8",
-
-        name: "task 3",
-        assignee: "vaibhav",
-        status: "inProgress"
-    },
-]
-
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
 }
